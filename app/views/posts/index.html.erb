@@ -1,0 +1,35 @@
+<div class="arrange-index">
+  <div class="list-left">
+    <ul>
+      <li class="list"><%= link_to("すべて","/posts/index") %></li>
+      <li><%= link_to("男子　床", "/posts/男子　床") %></li>
+      <li><%= link_to("鞍馬", "/posts/鞍馬") %></li>
+      <li><%= link_to("吊り輪", "/posts/吊り輪") %></li>
+      <li><%= link_to("男子　跳馬", "/posts/男子　跳馬") %></li>
+      <li><%= link_to("平行棒", "/posts/平行棒") %></li>
+      <li><%= link_to("鉄棒", "/posts/鉄棒") %></li>
+      <li><%= link_to("女子　跳馬", "/posts/女子　跳馬") %></li>
+      <li><%= link_to("段違い平行棒", "/posts/段違い平行棒") %></li>
+      <li><%= link_to("平均台", "/posts/平均台") %></li>
+      <li><%= link_to("女子　床", "/posts/女子　床") %></li>
+    </ul>
+  </div>
+  <div class="arrange-index-container">
+    <% @posts.each do |post| %>
+    <div class="posts-index-item">
+      <div class="post-left">
+        <img src="<%= "/user_images/#{post.user.image_name}" %>">
+      </div>
+      <div class="post-right">
+        <div class="post-user-name">
+          <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+        </div>
+        <video width="400px" height="300px" src="<%= "/user_videos/#{post.video}" %>" controls ></video><br>
+        
+        <%= link_to(post.content, "/posts/#{post.id}") %>
+      </div>
+    </div>
+    <% end %>
+    
+  </div>
+</div>

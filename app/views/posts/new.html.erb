@@ -1,0 +1,36 @@
+<div class="main posts-new">
+  <div class="container">
+    <h1 class="form-heading">新規投稿する</h1>
+    <%= form_tag("/posts/create", {multipart: true}) do %>
+    <div class="form">
+      <div class="form-body">
+        <% @post.errors.full_messages.each do |message| %>
+            <div class="form-error">
+              <%= message %>
+            </div>
+        <% end %>
+        <p>種目</p>
+        <p>
+          <select name="trick">
+            <option value="男子　床" trick_id=1>男子　床</option>
+            <option value="鞍馬">鞍馬</option>
+            <option value="吊り輪">吊り輪</option>
+            <option value="男子　跳馬">男子　跳馬</option>
+            <option value="平行棒">平行棒</option>
+            <option value="鉄棒">鉄棒</option>
+            <option value="女子　跳馬">女子　跳馬</option>
+            <option value="段違い平行棒">段違い平行棒</option>
+            <option value="平均台">平均台</option>
+            <option value="女子　床">女子　床</option>
+          </select>
+        </p>
+        <p>動画</p>
+        <input name="video" type="file">
+        <p>内容を書く</p>
+        <textarea name="content"><%= @post.content %></textarea>
+        <input type="submit" value="投稿">
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

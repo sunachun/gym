@@ -1,0 +1,15 @@
+<div class="arrange-comments-show">
+  <div class="arrange-comments-container">
+    <h1 class="form-heading">コメントする</h1>
+    <% if @current_user %>
+      <%= form_tag("/posts/#{@post.id}/comments", method: :post) do %>
+        <div class="form">
+          <div class="form-body">
+            <textarea name="text" placeholder="コメントする" rows="2" cols="30"></textarea>
+            <input type="submit" value="sent">
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
