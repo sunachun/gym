@@ -252,9 +252,11 @@ header {
   font-size: 14px;
 }
 
-@media(max-width: 670px){
-  .about-main {
-    width: 100%;
-    color: black;
-  }
+@media screen and (max-width:480px) {
+ 
+	/*　画面サイズが480px以下の場合ここの記述が適用される　*/
+ .about-main h2{
+   color: black;
+   font-size: 100px;
+ }
 }
