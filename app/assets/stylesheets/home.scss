@@ -252,3 +252,9 @@ header {
   font-size: 14px;
 }
 
+@media(max-width: 670px){
+  .about-main {
+    width: 100%;
+    color: black;
+  }
+}
