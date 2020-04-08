@@ -64,7 +64,7 @@ class PostsController < ApplicationController
       #video: params[:video]
       )
       if params[:video]
-      @post.video = "#{@current_user.id}.mp4"
+      @post.video = "#{@post.id}.mp4"
       video = params[:video]
       File.binwrite("public/user_videos/#{@post.video}", video.read)
       end

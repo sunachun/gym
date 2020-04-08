@@ -26,16 +26,7 @@
         </div>
         <%= link_to(post.trick_name, "/posts/#{post.id}") %><br>
         <video width="400px" height="300px" src="<%= "/user_videos/#{post.video}" %>" controls ></video><br>
-        <% if Like.find_by(user_id: @current_user.id, post_id: post.id) %>
-          <%= link_to("/likes/#{post.id}/destroy", {method: :post}) do %>
-            <span class="fa fa-heart like-btn-unlike"></span>
-          <% end %>
-        <% else %>
-          <%= link_to("/likes/#{post.id}/create", {method: :post}) do %>
-            <span class="fa fa-heart like-btn"></span>
-          <% end %>
-        <% end %>
-        <%= @like_count %><br>
+        
         <%= link_to(post.content, "/posts/#{post.id}") %>
       </div>
         
