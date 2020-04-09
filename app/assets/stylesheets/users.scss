@@ -1,3 +1,4 @@
+@media screen and (max-width:2000px) {
 /* users/index ================================ */
 .users-heading {
   font-weight: 300;
@@ -150,4 +151,166 @@
   content: "";
   display: block;
   
+}
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:1300px) {
+  /* users/index ================================ */
+.users-heading {
+  font-weight: 300;
+  margin: 60px 0 20px;
+  font-size: 48px;
+  color: #bcc8d4;
+}
+
+.users-index-item {
+  padding: 20px 30px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+  display: table;
+  width: 100%;
+}
+
+.user-left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  box-shadow: 0 2px 6px #c1ced7;
+  object-fit: cover;
+}
+
+.user-name a {
+  font-weight: 600;
+}
+
+.user-name a:hover {
+  color: #3ecdc6;
+}
+
+.user-left {
+  float: left;
+  width: 10%;
+}
+
+.user-right {
+  width: 90%;
+  padding-left: 25px;
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* users/show ================================ */
+.user-show {
+  text-align: center;
+}
+
+.user {
+  margin-bottom: 20px;
+}
+
+.user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40%;
+  box-shadow: 0 2px 6px #c1ced7;
+  margin: 20px 0 10px;
+  object-fit: cover;
+}
+
+.user h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.user p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.user a {
+  color: #8899a6;
+  text-decoration: underline;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.user span {
+  color: #afb6bf;
+  font-weight: 200;
+  padding: 0 6px 0 8px;
+}
+
+.user-tabs {
+  margin-top: 40px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+}
+
+.user-tabs li {
+  float: left;
+}
+
+.user-tabs li.active {
+  border-bottom: 2px solid #3ecdc6;
+}
+
+.user-tabs li.active a {
+  color: #57575f;
+}
+
+.user-tabs a {
+  display: inline-block;
+  padding: 16px 30px;
+  color: #afb6bf;
+  font-size: 20px;
+}
+
+/* users/new, users/edit ================================ */
+.users-form input {
+  margin-bottom: 15px;
+}
+
+
+/* users/show */
+.container-show {
+  width: 800px;
+  margin: 60px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+}
+
+.arrange {
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.arrange-right {
+  float: left;
+  padding-left: 25px;
+  text-align: left;
+  box-shadow: 0 2px 6px #c1ced7;
+  width: 31%;
+  position: relative;
+  height: auto;
+  margin: 1%;
+  overflow: hidden;
+}
+
+.arrange-right:before{
+  content: "";
+  display: block;
+  
+}
 }
