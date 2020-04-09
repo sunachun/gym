@@ -23,7 +23,7 @@ class UsersController < ApplicationController
       password: params[:password],
       image_name: "S__60448778.jpg",
       )
-      
+      @user.save
     if params[:image]
       @user.image_name = "#{@user.id}.jpg"
       image = params[:image]
