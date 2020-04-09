@@ -24,12 +24,10 @@
         <div class="post-user-name">
           <%= link_to(post.user.name, "/users/#{post.user.id}") %>
         </div>
-        <%= link_to(post.trick_name, "/posts/#{post.id}") %><br>
         <video width="400px" height="300px" src="<%= "/user_videos/#{post.video}" %>" controls ></video><br>
         
         <%= link_to(post.content, "/posts/#{post.id}") %>
       </div>
-        
     </div>
     <% end %>
     

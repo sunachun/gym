@@ -18,3 +18,17 @@
 $(function(){
   setTimeout("$('.flash').fadeOut('slow')", 2000) 
 })
+
+//再生開始
+//function videoPlay(){
+//    document.getElementById("video").play();
+//}
+ 
+//再生を停止
+//function videoPause(){
+//    document.getElementById("video").pause();
+//}
+//ループ再生
+//function videoLoop(){
+//    document.getElementById("video").loop = true;
+//}
