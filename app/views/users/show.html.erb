@@ -15,7 +15,7 @@
     <div class="arrange">
       <% @user.posts.all.reverse.each do |post| %>
         <div class="arrange-right">
-          <video width="200px" height="133px" src="<%= "/user_videos/#{post.video}" %>" controls></video>
+          <video width="180px" height="120px" src="<%= "/user_videos/#{post.video}" %>" controls></video>
           <%= link_to(post.content, "/posts/#{post.id}") %>
         </div>
       <% end %>
